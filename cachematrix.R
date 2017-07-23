@@ -3,7 +3,7 @@
 
 ## Make a Cache matrix
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(m = matrix()) {
     mi = NULL
     set = function(n){
         m <<- n
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## To check for the Cache and populate it
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(m, ...) {
     ## Return a matrix that is the inverse of 'x'
     mi <- m$getinv()
     if(!is.null(mi)) {
